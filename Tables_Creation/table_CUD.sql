@@ -154,37 +154,76 @@ insert into customer_club values ('3','Kourosh_Club', 400)
 insert into customer_club values ('4','Dariush_Club', 350)
 insert into customer_club values ('5','Ashkani_Club', 600)
 
---Membership
+-- Membership
 insert into Membership values ('1','2')
 insert into Membership values ('2','4')
 insert into Membership values ('3','5')
 insert into Membership values ('4','3')
 insert into Membership values ('5','1')
 
---Branch
+-- Branch
 insert into Branch values ('1','3','shamreh1', 'Isfahan','safavieh','4564567')
 insert into Branch values ('2','4','shoamreh2', 'Natanz','pasdaran','1475289')
 insert into Branch values ('3','1','shoamreh3', 'Qazvin','amirkabir','6354982')
 insert into Branch values ('4','1','shoamreh4', 'Birjand','mohtasham','8546328')
 insert into Branch values ('5','5','shoamreh5', 'Bojnoord','fazel','1254789')
 
---Branch_phone_number
+-- Branch_phone_number
 insert into Branch_phone_number values ('02198547')
 insert into Branch_phone_number values ('02154763')
 insert into Branch_phone_number values ('02152478')
 insert into Branch_phone_number values ('02163589')
 insert into Branch_phone_number values ('02146978')
 
---clothe
+-- clothe
 insert into clothe values ('2', 'shirt', 500000,90,20, 'Gucci','Cotton','red')
 insert into clothe values ('3', 'shirt',600000, 60,10,'Christian Dior','Wool','green')
 insert into clothe values ('1', 'shoes',200000, 40,12,'Louis Vuitton','Leather','black')
 insert into clothe values ('4', 'pants',600000, 45,16,'Guess','Lee','blue')
 insert into clothe values ('5', 'jacket',964547, 55,21,'Versace Versace','Cotton','blue')
 
---C_order
+-- C_order
 insert into C_order values (3, '1', '2',26541)
 insert into C_order values (2, '2', '1',26542)
 insert into C_order values (4, '4', '3',26543)
 insert into C_order values (1, '5', '2',26544)
 insert into C_order values (1, '3', '4',26545)
+
+---------- Update Table
+--add
+ALTER TABLE clothe
+ADD made_in nvarchar(50);
+
+ALTER TABLE Office_Manager
+ADD Date_of_birth DATE;
+
+--change
+ALTER TABLE clothe
+ALTER COLUMN brand varchar(40);
+
+ALTER TABLE Branch_phone_number
+ALTER COLUMN phone_number varchar(20);
+
+--delete
+ALTER TABLE clothe
+DROP COLUMN size;
+
+ALTER TABLE customer
+DROP COLUMN username;
+
+---------- Update Rows
+
+UPDATE customer
+SET firstname = 'Navid'
+WHERE ID = 1;
+
+UPDATE Branch_manager
+SET lastname = 'Razavi'
+WHERE ID = 3;
+
+---------- Delete Rows
+
+DELETE FROM customer WHERE ID=1;
+
+DELETE FROM clothe WHERE brand = 'Gucci';
+
