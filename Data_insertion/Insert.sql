@@ -16,11 +16,11 @@ insert into customer values ('Hossein', 'Rahmani','HR200', '74154')
 insert into customer values ('Amir', 'Fakhar','amiram', '56456')
 
 -- Branch_manager
-insert into Branch_manager values ('1','Mohmmad', 'Kashani','mokash', '486789')
-insert into Branch_manager values ('2','Hasan', 'Rahimi','rahim', '5645')
-insert into Branch_manager values ('3','ShamsAli', 'Rashti','sangbarghi', '74546')
-insert into Branch_manager values ('4','Atefeh', 'Gholami','gholamam', '484')
-insert into Branch_manager values ('5','Danial', 'Farhadi','danifar', '65445')
+insert into Branch_manager values ('Mohmmad', 'Kashani','mokash', '486789')
+insert into Branch_manager values ('Hasan', 'Rahimi','rahim', '5645')
+insert into Branch_manager values ('ShamsAli', 'Rashti','sangbarghi', '74546')
+insert into Branch_manager values ('Atefeh', 'Gholami','gholamam', '484')
+insert into Branch_manager values ('Danial', 'Farhadi','danifar', '65445')
 
 --central_office
 insert into central_office values ('1','Safavieh', 'Kashan','Danesh')
