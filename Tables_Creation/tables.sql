@@ -4,13 +4,14 @@ create table Office_Manager
 	ID int not null identity(1,1),
 	firstname varchar(40),
 	lastname varchar(50),
+	username varchar(50) not null,
 	o_password varchar(50),
+	unique(username),
 	primary key(ID)
 )
 
 create table central_office(
 	ID int not null identity(1,1),
-	office_mager_username varchar(10),
 	Office_manager_ID int not null,
 	c_name varchar(40) not null,
 	city varchar(40) not null,
@@ -38,7 +39,9 @@ create table customer
 	ID int not null identity(1,1),
 	firstname varchar(40) not null default 'unknown',
 	lastname varchar(50) not null default 'unknown',
+	username varchar(50) not null,
 	c_password varchar(50) not null,
+	unique(username),
 	primary key(ID)
 )
 
@@ -52,11 +55,12 @@ create table Membership (
 
 create table Branch_manager(
 	ID int not null identity(1,1),
-	username varchar(20) not null,
 	office_manager_ID int not null,
 	firstname varchar(40) not null,
 	lastname varchar(40) not null,
+	username varchar(50) not null,
 	b_password int not null,
+	unique(username),
 	primary key (ID),
 	foreign key(office_manager_ID) references Office_Manager(ID)
 )
