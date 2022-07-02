@@ -60,11 +60,7 @@ create table Branch_manager(
 	primary key (ID),
 	foreign key(office_manager_ID) references Office_Manager(ID)
 )
-alter table Branch
-add b_name varchar(50) not null,
-city varchar(40) not null,
-street varchar(40) not null,
-postal_code varchar(40) not null;
+
 create table Branch(
 	ID int not null identity(1,1),
 	central_office_ID int not null,
