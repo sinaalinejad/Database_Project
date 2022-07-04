@@ -6,7 +6,7 @@ Alter Table clothe
 	Add Constraint Ttype check (c_type in ('shirt', 'sweater', 'shoes', 'pants','jacket'));
 
 Alter Table clothe
-	Add Constraint mmaterial check (material   in ('Cotton', 'Cellulosic_fibres', 'viscose', 'Wool','Silk','Leather','Bast fibres'));
+	Add Constraint mmaterial check (material   in ('Cotton', 'Cellulosic_fibres','Lee', 'viscose', 'Wool','Silk','Leather','Bast fibres'));
 
 
 Alter Table clothe

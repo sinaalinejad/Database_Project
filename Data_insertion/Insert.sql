@@ -1,4 +1,5 @@
 -- insert data
+
 -- Office Manager
 insert into Office_Manager values ('Navid', 'Ebrahimi', 'navidium','1234')
 insert into Office_Manager values ('Sina', 'Alinejad','sinaalj', '4321')
@@ -51,18 +52,18 @@ insert into Branch values ('4','1','shoamreh4', 'Birjand','mohtasham','8546328')
 insert into Branch values ('5','5','shoamreh5', 'Bojnoord','fazel','1254789')
 
 -- Branch_phone_number
-insert into Branch_phone_number values ('02198547')
-insert into Branch_phone_number values ('02154763')
-insert into Branch_phone_number values ('02152478')
-insert into Branch_phone_number values ('02163589')
-insert into Branch_phone_number values ('02146978')
+insert into Branch_phone_number values ('1','02198547')
+insert into Branch_phone_number values ('2','02154763')
+insert into Branch_phone_number values ('3','02152478')
+insert into Branch_phone_number values ('4','02163589')
+insert into Branch_phone_number values ('5','02146978')
 
 -- clothe
 insert into clothe values ('2', 'shirt', 500000,90,20, 'Gucci','Cotton','red')
-insert into clothe values ('3', 'shirt',600000, 60,10,'Christian Dior','Wool','green')
-insert into clothe values ('1', 'shoes',200000, 40,12,'Louis Vuitton','Leather','black')
-insert into clothe values ('4', 'pants',600000, 45,16,'Guess','Lee','blue')
-insert into clothe values ('5', 'jacket',964547, 55,21,'Versace Versace','Cotton','blue')
+insert into clothe values ('3', 'shirt',600000, 82,10,'Christian Dior','Wool','green')
+insert into clothe values ('1', 'shoes',200000, 100,12,'Louis Vuitton','Leather','black')
+insert into clothe values ('4', 'pants',600000, 111,16,'Guess','Lee','blue')
+insert into clothe values ('5', 'jacket',964547, 115,21,'Versace Versace','Cotton','blue')
 
 -- C_order
 insert into C_order values (3, '1', '2',26541)
